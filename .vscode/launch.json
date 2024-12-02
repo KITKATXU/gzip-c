@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Installed gzip",
+            "program": "/usr/local/bin/gzip", // 根据安装位置设置路径
+            "args": ["-d", "${workspaceFolder}/test.txt.gz"],    // 调试时的命令行参数
+            "cwd": "${workspaceFolder}",      // 当前工作目录
+            "stopOnEntry": false,             // 是否在程序入口处暂停
+            "env": {},                        // 可选：设置环境变量
+            "preLaunchTask": ""               // 不需要构建任务
+        }
+    ]
+}
+
